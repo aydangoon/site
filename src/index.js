@@ -10,7 +10,7 @@ import App from './App';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router basename='/site'>
+        <Router>
             <App />
         </Router>
     </React.StrictMode>,
