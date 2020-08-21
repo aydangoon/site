@@ -1,0 +1,154 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('./assets/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: Lato;
+    src: url('./assets/Lato-Light.ttf');
+}
+
+$lg-green: #b4edd2ff;
+$dk-green: #69B57D;
+$lg-lav: #EBB9DF;
+$dk-lav: #BC89D1; //A27BA3
+$grey: #909090;
+
+:root {
+    --bg-color: white;
+    --fg-color: black;
+    --footer-bg-color: black;
+    --bg-2-reverse-color: #404040;
+}
+
+* {
+    font-family: Lato;
+}
+
+a {
+    color: $dk-lav;
+    &:hover {
+        color: $lg-lav;
+    }
+}
+
+// bootstrap classes
+
+
+
+div[class*='col'] {
+    padding: $spacer * 0.25;
+}
+
+div[class~='container'] {
+    background-color: white;
+}
+
+* {
+    &[class~='btn-primary'] {
+        background-color: $dk-green !important;
+        color: $lg-green !important;
+        border-color: $dk-green !important;
+        &:hover {
+            background-color: $lg-green !important;
+            border-color: $lg-green !important;
+            color: white !important;
+        }
+        &:active, &:focus {
+            box-shadow: none;
+        }
+    }
+    &[class~='nav-link']{
+        &:hover {
+            color: var(--footer-bg-color);
+        }
+        outline: none;
+    }
+
+}
+
+// my classes
+
+img[class~='icon'] {
+    width: 1em;
+    height: auto;
+    margin: $spacer * 0.25;
+}
+
+*[class~='grow-hover'] {
+    transform: scale(1);
+    transition: 0.5s;
+}
+*[class~='grow-hover']:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+// colors
+* {
+    &[class~='theme'] {
+        background-color: var(--bg-color) !important;
+        color: var(--fg-color) !important;
+    }
+    &[class~='reverse-bg-theme'] {
+        background-color: var(--bg-2-reverse-color) !important;
+    }
+    &[class~='bg-theme'] {
+        background-color: var(--bg-color) !important;
+    }
+    &[class~='fg-theme'] {
+        color: var(--fg-color) !important;
+    }
+    &[class~='text-lg-green'] {
+        color: $lg-green;
+    }
+    &[class~='text-lg-lav'] {
+        color: $lg-lav;
+    }
+    &[class~='text-white'] {
+        color: white;
+    }
+    &[class~='bg-lg-green'] {
+        background-color: $lg-green !important;
+    }
+    &[class~='bg-lg-lav'] {
+        background-color: $lg-lav !important;
+    }
+    &[class~='btn-vid'] {
+        background-color: $dk-lav;
+        color: $lg-lav;
+        border-color: $dk-lav !important;
+        &:hover {
+            background-color: $lg-lav;
+            border-color: $lg-lav !important;
+            color: white;
+        }
+        &:active, &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+// other
+@keyframes fade-in {
+    from { opacity: 0; /*transform: scale(95%, 95%);*/}
+    to   { opacity: 1; /*transform: scale(100%, 100%);*/}
+}
+#all-content {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    & > * {
+        //animation: fade-in 1s;
+    }
+}
+
+#canvas {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

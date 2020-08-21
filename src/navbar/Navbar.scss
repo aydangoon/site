@@ -1,0 +1,12 @@
+@import '../index.scss';
+
+*[class*='active'] {
+    &[class~='text-lg-green'] {
+        color: $dk-green;
+        font-style: italic;
+    }
+    &[class~='text-lg-lav'] {
+        color: $dk-lav;
+        font-style: italic;
+    }
+}
