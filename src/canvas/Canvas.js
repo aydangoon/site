@@ -46,9 +46,11 @@ export default class Canvas extends React.Component {
 
     componentDidMount(){
         this.fixCanvasDimensions()
-        this.makeLines()
-        const tick = setInterval(this.update, 50)
-        this.setState({tick: tick})
+        if (this.canvasRef.current.width > 600) {
+            this.makeLines()
+            const tick = setInterval(this.update, 50)
+            this.setState({tick: tick})
+        }
     }
 
     componentWillUnmount() {
