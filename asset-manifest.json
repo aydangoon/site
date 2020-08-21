@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/site/static/css/main.7402d954.chunk.css",
+    "main.js": "/site/static/js/main.674f8ad4.chunk.js",
+    "main.js.map": "/site/static/js/main.674f8ad4.chunk.js.map",
+    "runtime-main.js": "/site/static/js/runtime-main.50cf3253.js",
+    "runtime-main.js.map": "/site/static/js/runtime-main.50cf3253.js.map",
+    "static/css/2.11829350.chunk.css": "/site/static/css/2.11829350.chunk.css",
+    "static/js/2.0a3fafea.chunk.js": "/site/static/js/2.0a3fafea.chunk.js",
+    "static/js/2.0a3fafea.chunk.js.map": "/site/static/js/2.0a3fafea.chunk.js.map",
+    "index.html": "/site/index.html",
+    "precache-manifest.d7928b3df51511cba16d643f84def0bb.js": "/site/precache-manifest.d7928b3df51511cba16d643f84def0bb.js",
+    "service-worker.js": "/site/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/site/static/css/2.11829350.chunk.css.map",
+    "static/css/main.7402d954.chunk.css.map": "/site/static/css/main.7402d954.chunk.css.map",
+    "static/js/2.0a3fafea.chunk.js.LICENSE.txt": "/site/static/js/2.0a3fafea.chunk.js.LICENSE.txt",
+    "static/media/2dboids.png": "/site/static/media/2dboids.d8196ab2.png",
+    "static/media/3dboids.gif": "/site/static/media/3dboids.88be4e42.gif",
+    "static/media/HOL.png": "/site/static/media/HOL.33358921.png",
+    "static/media/Lato-Light.ttf": "/site/static/media/Lato-Light.2fe27d9d.ttf",
+    "static/media/Ubuntu-Regular.ttf": "/site/static/media/Ubuntu-Regular.2505bfbd.ttf",
+    "static/media/ascher.jpg": "/site/static/media/ascher.123d8167.jpg",
+    "static/media/aydang_resume.pdf": "/site/static/media/aydang_resume.1de10e2e.pdf",
+    "static/media/batesian.png": "/site/static/media/batesian.46234b06.png",
+    "static/media/fullstack.png": "/site/static/media/fullstack.8a18f73e.png",
+    "static/media/gravity.png": "/site/static/media/gravity.dfe57f30.png",
+    "static/media/hamburger.png": "/site/static/media/hamburger.fae77f12.png",
+    "static/media/lithegl.png": "/site/static/media/lithegl.8e995e1c.png",
+    "static/media/me.jpg": "/site/static/media/me.c4182790.jpg",
+    "static/media/music.jpg": "/site/static/media/music.05da7774.jpg",
+    "static/media/snake.png": "/site/static/media/snake.ac9e34b0.png",
+    "static/media/werewolf.png": "/site/static/media/werewolf.e308b3d3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50cf3253.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.0a3fafea.chunk.js",
+    "static/css/main.7402d954.chunk.css",
+    "static/js/main.674f8ad4.chunk.js"
+  ]
+}
