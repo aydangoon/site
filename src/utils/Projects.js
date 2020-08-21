@@ -10,7 +10,7 @@ export function makeProjectCard(src = '', title = 'title', desc = 'desc', href='
     }
     return (
         <div className="card m-2 p-1 text-center grow-hover theme" style={{width: '18rem'}}>
-            <img src={imgsrc} className="card-img-top rounded" alt='(no image loaded)' />
+            <img src={imgsrc} className="card-img-top rounded" alt='' />
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <div className="card-text">{desc}</div>
@@ -33,7 +33,6 @@ export function makeProjectCard(src = '', title = 'title', desc = 'desc', href='
     )
 }
 export class InfoModal extends React.Component {
-    constructor(props) { super(props) }
     render() {
         return (
             <div className="modal fade" id={this.props.name} tabindex="-1" role="document" aria-labelledby={this.props.name + 'Label'} aria-hidden="true">

@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
                     </ul>
                     <h2 className = 'mt-4'> Resume </h2>
                     <a href={require('../assets/aydang_resume.pdf')}
-                    target='_blank'><img className = 'icon'src={require('../assets/download.png')} alt='' />open</a>
+                    target='_blank' rel="noopener noreferrer"><img className = 'icon'src={require('../assets/download.png')} alt='' />open</a>
                 </div>
             </div>
         )

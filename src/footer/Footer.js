@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
             <div className = 'container-fullwidth d-flex justify-content-center align-items-center' id='footer'>
                 <div>Send me a message!</div>
                 <div>
-                    <form className = 'form-inline m-1' action='mailto:aydan.gooneratne@gmail.com' method='POST' enctype='multipart-formdata'>
+                    <form className = 'form-inline m-1' action='mailto:aydan.gooneratne@gmail.com' method='POST' encType='multipart-formdata'>
                         <button type="submit" value='Submit' className="btn btn-primary">send an email</button>
                     </form>
                 </div>

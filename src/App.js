@@ -9,7 +9,7 @@ import Videos from './videos/Videos.js'
 import Contact from './contact/Contact.js'
 import * as Colors from './utils/Colors.js'
 
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 export default class App extends React.Component {
 

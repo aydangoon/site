@@ -25,24 +25,20 @@ export default class Canvas extends React.Component {
         this.fixCanvasDimensions()
         const canvas = this.canvasRef.current
         const ctx = canvas.getContext('2d')
-        const cols = this.state.cols
-        const side = this.state.sideLen
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         this.state.lines.forEach(line => {
-            line.update(cols)
+            line.update(this.state.cols)
             line.drawTo(ctx, this.state.sideLen, this.props.pageColor)
         })
 
     }
 
     makeLines() {
-        const cols = this.state.cols
         const numLines = 10
         const lines = []
         for (let i = 0; i < numLines; i++) {
             let r = Math.floor(Math.random() * 1000)
             let c = Math.floor(Math.random() * 1000)
-            console.log(r, c)
             lines.push(new Line(r, c))
         }
         this.setState({lines: lines})
@@ -67,7 +63,6 @@ export default class Canvas extends React.Component {
             canvas.height = canvas.clientHeight
             let sideLen = Math.ceil(canvas.height / ROWS)
             this.setState({sideLen: sideLen, cols: Math.ceil(canvas.width / sideLen)})
-            console.log('canvas fix', Math.random());
         }
     }
 }
@@ -85,15 +80,6 @@ function Line(r, c) {
             this.tenCount++
         } else {
             this.blocks.shift()
-        }
-
-    }
-    this.randomDir = () => {
-        let x = Math.floor(Math.random() * 2)
-        if (this.dir[0] === 0) {
-            this.dir = x === 0 ? [1, 0] : [-1, 0]
-        } else {
-            this.dir = x === 0 ? [0, 1] : [0, -1]
         }
     }
     this.drawTo = (ctx, side, col) => {

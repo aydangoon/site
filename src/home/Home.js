@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className = 'col-4 p-4'>
-                        <img src={require('../assets/me.jpg')} width={200} className = 'rounded shadow img-fluid' />
+                        <img src={require('../assets/me.jpg')} alt='' width={200} className = 'rounded shadow img-fluid' />
                     </div>
                 </div>
                 <div className = 'row'>
@@ -43,7 +43,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className = 'col-4 p-4'>
-                        <img src={require('../assets/fullstack.png')} width={200} className = 'rounded img-fluid' />
+                        <img src={require('../assets/fullstack.png')} alt='' width={200} className = 'rounded img-fluid' />
                     </div>
                 </div>
                 <div className = 'row'>
@@ -63,7 +63,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className = 'col-4 p-4'>
-                        <img src={require('../assets/music.jpg')} width={200} className = 'rounded shadow' />
+                        <img src={require('../assets/music.jpg')} alt='' width={200} className = 'rounded shadow' />
                     </div>
                 </div>
                 <div className = 'row'>
@@ -76,7 +76,7 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className = 'col-4 p-4'>
-                        <img src={require('../assets/ascher.jpg')} width={200} className = 'rounded shadow' />
+                        <img src={require('../assets/ascher.jpg')} alt='' width={200} className = 'rounded shadow' />
                         <div> Ascher Mt., photo from a hike </div>
                     </div>
                 </div>
