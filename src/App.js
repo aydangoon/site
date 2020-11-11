@@ -9,7 +9,7 @@ import Videos from './videos/Videos.js'
 import Contact from './contact/Contact.js'
 import * as Colors from './utils/Colors.js'
 
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 
 export default class App extends React.Component {
 
@@ -20,35 +20,38 @@ export default class App extends React.Component {
         }
         this.setDark = this.setDark.bind(this)
     }
+
     render() {
         return (
             <div>
                 <div className = 'container-fullwidth' id='all-content'>
                     <Navbar dark={this.state.dark} setDark={this.setDark} />
-                    <Route path={['/home', '/']} exact>
-                        <Canvas pageColor={Colors.LG_LAV}/>
-                        <Home />
-                    </Route>
-                    <Route path='/web-projects'>
-                        <Canvas pageColor={Colors.LG_GREEN}/>
-                        <WebProjects />
-                    </Route>
-                    <Route path='/other-projects'>
-                        <Canvas pageColor={Colors.LG_GREEN}/>
-                        <OtherProjects />
-                    </Route>
-                    <Route path='/videos'>
-                        <Canvas pageColor={Colors.LG_LAV}/>
-                        <Videos />
-                    </Route>
-                    <Route path='/resume-and-contact'>
-                        <Canvas pageColor={Colors.LG_LAV}/>
-                        <Contact />
-                    </Route>
-                    <Route path='*'>
-                        <Redirect to='/home' />
-                    </Route>
-                    <Footer />
+                    <Switch>
+                      <Route path={['/home', '/']} exact>
+                          <Canvas pageColor={Colors.LG_LAV}/>
+                          <Home />
+                      </Route>
+                      <Route path='/web-projects'>
+                          <Canvas pageColor={Colors.LG_GREEN}/>
+                          <WebProjects />
+                      </Route>
+                      <Route path='/other-projects'>
+                          <Canvas pageColor={Colors.LG_GREEN}/>
+                          <OtherProjects />
+                      </Route>
+                      <Route path='/videos'>
+                          <Canvas pageColor={Colors.LG_LAV}/>
+                          <Videos />
+                      </Route>
+                      <Route path='/resume-and-contact'>
+                          <Canvas pageColor={Colors.LG_LAV}/>
+                          <Contact />
+                      </Route>
+                      <Route path='/'>
+                          <Redirect to='/home' />
+                      </Route>
+                      <Footer />
+                    </Switch>
                 </div>
                 <div id = 'modal'></div>
             </div>

@@ -1,6 +1,6 @@
 {
   "name": "my-site-better",
-  "homepage": "https://aydangoon.github.io/site",
+  "homepage": "/~aydang/site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
