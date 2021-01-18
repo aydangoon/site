@@ -9,7 +9,10 @@ const descs = {
             'I\'ve included 10+ unique roles and an array of customizable gameplay settings.',
     snakes: 'Snakes is a online multiplayer snake battle royale game. Simply create a lobby, ' +
             'invite your friends and get playing. Classic ' +
-            'snake rules, but many players. Last snake standing wins!'
+            'snake rules, but many players. Last snake standing wins!',
+    bb:     'Brick Bench is a modding tool for early Traveler\'s Tales games. ' +
+            'It\'s developed by Jav, a member of the TT modding discord. ' +
+            'I coded the website for the tool and am pretty proud of how it turned out!'
 }
 
 export default class WebProjects extends React.Component {
@@ -25,6 +28,8 @@ export default class WebProjects extends React.Component {
                 <div className = 'mt-4'>
                     <h2> What I'm Working on Now </h2>
                     <div className = 'row align-items-start'>
+                        {makeProjectCard('brick-bench.png', 'Brick Bench Site', 'Site for Brick Bench, a lego modding tool.',
+                        'https://brickbench.opengg.dev', 'visit the site',['front-end', 'react', 'webhooks'], 'bb', descs.bb)}
                         {makeProjectCard('lithegl.png', 'LitheGL', 'An open source graphing library.', 'https://aydangoon.github.io/Graph-Library/',
                         'current build', ['front end', 'react', 'graph theory', 'algorithms'], 'lgl', descs.lithegl)}
                         {makeProjectCard('werewolf.png', 'One Night Werewolf Online', 'The classic game moved online.', 'https://youtube.com/watch?v=NZQ9oyJ4FP8',
